@@ -26,6 +26,45 @@ align-items:center;
 .hero h1{font-size:48px;max-width:900px;margin:auto}
 .hero p{font-size:20px;margin:20px auto;max-width:760px}
 .btn{display:inline-block;background:#2563eb;color:#fff;padding:14px 28px;border-radius:6px;margin-top:18px}
+ .hero-buttons{
+display:flex;
+gap:16px;
+justify-content:center;
+flex-wrap:wrap;
+margin-top:18px;
+}
+
+.secondary-btn{
+background:transparent;
+border:1px solid #fff;
+}
+
+.hero-stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+margin-top:45px;
+max-width:900px;
+width:100%;
+}
+
+.hero-stats div{
+background:rgba(255,255,255,.12);
+border:1px solid rgba(255,255,255,.25);
+padding:18px;
+border-radius:10px;
+}
+
+.hero-stats strong{
+display:block;
+font-size:20px;
+margin-bottom:6px;
+}
+
+.hero-stats span{
+font-size:13px;
+color:#dbeafe;
+} 
 .section{padding:70px 8%;max-width:1400px;margin:auto}
 .section h2{text-align:center;font-size:34px;margin-bottom:15px}
 .subtitle{text-align:center;color:#64748b;margin-bottom:45px}
@@ -62,7 +101,17 @@ align-items:center;
 <section class="hero">
 <h1>Durable Steel Storage Solutions Built For Modern Living</h1>
 <p>LUOYANG BESI TECH CO., LTD. is a steel storage solution provider from China, supplying steel wardrobes, lockers, filing cabinets, shoe cabinets and customized storage products for global markets.</p>
-<a class="btn" href="#contact">Send Inquiry</a>
+<div class="hero-buttons">
+<a class="btn" href="#contact">Request A Quote</a>
+<a class="btn secondary-btn" href="#products">Browse Products</a>
+</div>
+
+<div class="hero-stats">
+<div><strong>OEM / ODM</strong><span>Customization Service</span></div>
+<div><strong>50 PCS</strong><span>Flexible MOQ</span></div>
+<div><strong>25-35 Days</strong><span>Lead Time</span></div>
+<div><strong>Global Export</strong><span>PH / ID / TH / PE / DE</span></div>
+</div>
 </section>
 
 <section class="section" id="products">
