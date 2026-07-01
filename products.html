@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUOYANG BESI TECH CO., LTD. | Steel Storage Solution Provider</title>
+<style>
+ .products-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    align-items: start;
+}
+ .product-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+ .product-card p {
+    flex-grow: 1;
+}
+.product-card img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    display: block;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+    margin-top:50px;
+}
+
+.why-card{
+    background:#fff;
+    border-radius:12px;
+    padding:28px;
+    box-shadow:0 4px 16px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.why-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+.why-card h3{
+    margin-bottom:16px;
+    font-size:22px;
+}
+
+.why-card p{
+    color:#666;
+    line-height:1.8;
+}
+.why-icon{
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    background:#2563eb;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin:0 auto 18px auto;
+
+    font-size:22px;
+    line-height:1;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{color:#1f2937;line-height:1.6;background:#fff}
+a{text-decoration:none}
+.header{background:#0f172a;color:#fff;padding:18px 8%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+.logo{font-size:24px;font-weight:bold}
+.nav a{color:#fff;margin-left:24px;font-size:14px}
+.hero{
+background:linear-gradient(rgba(15,23,42,.68),rgba(15,23,42,.68)),url("HERO.png") center/cover no-repeat;
+background-color:#111827;
+color:#fff;
+text-align:center;
+padding:180px 8% 120px;
+min-height:680px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+.hero h1{font-size:48px;max-width:900px;margin:auto}
+.hero p{font-size:20px;margin:20px auto;max-width:760px}
+.btn{display:inline-block;background:#2563eb;color:#fff;padding:14px 28px;border-radius:6px;margin-top:18px}
+ .hero-buttons{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+margin-top:25px;
+}
+
+.secondary-btn{
+background:transparent;
+border:1px solid #fff;
+}
+
+.hero-stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+margin-top:45px;
+max-width:900px;
+width:100%;
+}
+
+.hero-stats div{
+background:rgba(255,255,255,.12);
+border:1px solid rgba(255,255,255,.25);
+padding:18px;
+border-radius:10px;
+}
+
+.hero-stats strong{
+display:block;
+font-size:20px;
+margin-bottom:6px;
+}
+
+.hero-stats span{
+font-size:13px;
+color:#dbeafe;
+} 
+.section{padding:70px 8%;max-width:1400px;margin:auto}
+.section h2{text-align:center;font-size:34px;margin-bottom:15px}
+.subtitle{text-align:center;color:#64748b;margin-bottom:45px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.card{border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 4px 18px rgba(0,0,0,.05)}
+.card img{width:100%;height:230px;object-fit:cover;display:block;background:#f8fafc;padding:20px}
+.card div{padding:22px}
+.card h3{margin-bottom:10px}
+.card p{
+    line-height:1.7;
+    color:#666;
+    font-size:15px;
+}
+.factory img{height:240px;object-fit:cover;padding:0}
+.why{background:#f8fafc}
+.contact{background:#0f172a;color:#fff;text-align:left;padding:80px 20px;max-width:none;
+    margin:0;}
+ .contact-content{
+    max-width:760px;
+    margin:0 auto;
+}
+.contact h2{color:#fff;font-size:48px;margin-bottom:20px;}
+.contact p{font-size:20px;margin:18px 0;line-height:1.8;}
+.whatsapp{position:fixed;right:22px;bottom:22px;background:#22c55e;color:#fff;padding:14px 20px;border-radius:50px;font-weight:bold;box-shadow:0 5px 20px rgba(0,0,0,.25)}
+.footer{background:#020617;color:#94a3b8;text-align:center;padding:25px}
+@media(max-width:768px){
+.hero h1{font-size:34px}
+.nav{display:none}
+}
+.hero{
+position:relative;
+}
+
+.hero-overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45);
+z-index:1;
+}
+
+.hero > *{
+position:relative;
+z-index:2;
+}
+.secondary-btn{
+border:1px solid #fff;
+opacity:0.9;
+transition:0.3s;
+}
+
+.secondary-btn:hover{
+background:#fff;
+color:#111;
+}
+.trust-bar{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
+padding:20px 8%;
+background:rgba(15,23,42,0.92
+ackdrop-filter: blur(6px);               
+color:#fff;
+text-align:center;
+font-size:14px;
+}
+
+.trust-bar div{
+opacity:0.9;
+padding:10px;
+}
+.product-card{
+  background:#fff;
+  border-radius:12px;
+  padding:15px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+  transition:0.3s;
+  max-width:320px;
+  margin:auto;
+  text-align:left;
+}
+
+.product-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:10px;
+  display:block;
+}
+
+.product-card h3{
+  font-size:18px;
+  margin:10px 0 6px;
+}
+
+.product-card p{
+  font-size:14px;
+  color:#555;
+  margin-bottom:10px;
+}
+
+.tags span{
+  display:inline-block;
+  font-size:12px;
+  background:#eef2ff;
+  padding:4px 8px;
+  margin:2px;
+  border-radius:5px;
+}
+
+.product-card .btn{
+  display:inline-block;
+  margin-top:10px;
+  background:#2563eb;
+  color:#fff;
+  padding:8px 12px;
+  border-radius:6px;
+  text-decoration:none;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+<div class="logo">BESIFUR</div>
+<div class="nav">
+<a href="#products">Products</a>
+<a href="#factory">Factory</a>
+<a href="#why">Why Us</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+
+<section class="hero">
+ <div class="hero-overlay"></div>
+<h1>Durable Steel Storage Solutions Built For Modern Living</h1>
+<p>LUOYANG BESI TECH CO., LTD. is a steel storage solution provider from China, supplying steel wardrobes, lockers, filing cabinets, shoe cabinets and customized storage products for global markets.</p>
+<div class="hero-buttons">
+<a class="btn" href="#contact">Request A Quote</a>
+<a class="btn secondary-btn" href="#products">Explore Products →</a>
+</div>
+
+<div class="hero-stats">
+</div>
+</section>
+<div style="height:30px;"></div> 
+<div class="trust-bar">
+<div>🌍 20+ Export Countries</div>
+<div>📦 300+ Containers Shipped</div>
+<div>🏭 OEM / ODM Factory</div>
+<div>⏱ 25-35 Days Lead Time</div>
+</div>
+
+<section class="section" id="products">
+<h2>Our Main Products</h2>
+<p class="subtitle">Steel storage products for home, office, school, factory and commercial use.</p>
+
+<div class="products-grid">
+
+  <div class="product-card">
+    <img src="wardrobe.png">
+    <h3>Steel Wardrobe</h3>
+    <p>Heavy-duty storage for home & commercial use</p>
+    <a href="#contact" class="btn">Get Quote →</a>
+  </div>
+
+  <div class="product-card">
+    <img src="locker.png">
+    <h3>Metal Locker</h3>
+    <p>Employee lockers, school lockers and gym lockers with customized sizes and colors.</p>
+    <a href="#contact" class="btn">Get Quote →</a>
+  </div>
+
+  <div class="product-card">
+    <img src="filing%20cabinet.png">
+    <h3>Filing Cabinet</h3>
+    <p>Office filing cabinets and storage cabinets for business and commercial spaces.</p>
+    <a href="#contact" class="btn">Get Quote →</a>
+  </div>
+ 
+ <div class="product-card">
+    <img src="drawer%20cabinet.png">
+    <h3>Drawer Cabinet</h3>
+    <p>Compact steel drawer cabinet for home office, workspace and everyday organization.</p>
+    <a href="#contact" class="btn">Get Quote →</a>
+  </div>
+
+  <div class="product-card">
+    <img src="shoe%20cabinet.png">
+    <h3>Steel Shoe Cabinet</h3>
+    <p>Space-saving steel shoe cabinets for home entryways and modern apartments.</p>
+    <a href="#contact" class="btn">Get Quote →</a>
+  </div>
+
+</div>
+</section>
+
+<section class="section factory" id="factory">Ï
+<h2>Factory & Production</h2>
+<p class="subtitle">From raw material, powder coating, packing to container loading, we focus on stable quality and export-ready packaging.</p>
+
+<div class="grid">
+<div class="card">
+    <img src="1.%20loading.jpg">
+    <div>
+         <h3>Container Loading</h3>
+         <p>Export packing and container loading for overseas shipments.</p>
+    </div>
+</div>
+<div class="card">
+    <img src="2.%20coating%20line.png">
+    <div>
+        <h3>Powder Coating Line</h3>
+        <p>Electrostatic powder coating for durable surface finish.</p>
+    </div>
+</div>
+<div class="card">
+    <img src="3.%20workshop.jpg">   
+    <div>
+        <h3>Production Workshop</h3>
+        <p>Organized production area for stable order processing.</p>
+    </div>
+</div>
+<div class="card">
+    <img src="4.%20packing%20area.jpg">
+    <div>
+        <h3>Packing Area</h3>
+        <p>Carton packing prepared for long-distance sea transportation.</p>
+    </div>
+</div>
+</div>
+</section>
+
+<section class="section why" id="why">
+<h2>Why Choose BESIFUR</h2>
+<p class="subtitle">Reliable supply, flexible customization and practical export experience.</p>
+
+<div class="why-grid">
+<div class="why-card">
+<div class="why-icon">🌍</div>
+<h3>10+ Years Export Experience</h3>
+<p>Professional steel storage furniture supplier serving distributors and wholesalers worldwide.</p>
+</div>
+<div class="why-card">
+<div class="why-icon">🏭</div>
+<h3>OEM & ODM Service</h3>
+<p>Support custom size, color, logo, structure and packaging according to your requirements.</p>
+</div>
+<div class="why-card">
+<div class="why-icon">📦</div>
+<h3>MOQ From 50 PCS</h3>
+<p>Flexible minimum order quantity for importers, distributors and project customers.</p>
+</div>
+<div class="why-card">
+<div class="why-icon">🚢</div>
+<h3>Stable Lead Time</h3>
+<p>Normally 25–35 days production with reliable delivery schedule.</p>
+</div>
+<div class="why-card">
+<div class="why-icon">🌐</div>
+<h3>Export to 20+ Countries</h3>
+<p>Products supplied to Southeast Asia, Europe, Middle East and South America.</p>
+</div>
+<div class="why-card">
+<div class="why-icon">👨‍💼</div>
+<h3>Professional Export Team</h3>
+<p>Fast quotation, technical support and responsive communication throughout every order.</p>
+</div>
+</div>
+</section>
+
+<section class="section contact" id="contact">
+<div class="contact-content">
+<h2>Ready to Start Your Project?</h2>
+<p>Contact our sales team for quotations, catalogs and customized solutions.</p>
+<p>🏢 <strong>Company:</strong> LUOYANG BESI TECH CO., LTD.</p>
+<p>👤 <strong>Contact:</strong> Kevin Song</p>
+<p>📧 <strong>Email:</strong> kevin@besifur.com</p>
+<p>💬 <strong>WhatsApp:</strong> +86 18737980890</p>
+<p>⏰ Reply within 24 hours.</p>
+<a class="btn" href="mailto:kevin@besifur.com">
+Request a Free Quote →
+</a>
+</div>
+</section>
+
+<a class="whatsapp" href="https://wa.me/8618737980890" target="_blank">WhatsApp</a>
+
+<div class="footer">
+© 2026 LUOYANG BESI TECH CO., LTD. All Rights Reserved.
+</div>
+
+</body>
+</html>
