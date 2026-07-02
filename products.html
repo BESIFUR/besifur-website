@@ -5,6 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LUOYANG BESI TECH CO., LTD. | Steel Storage Solution Provider</title>
 <style>
+.product-tabs{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-bottom:40px;
+}
+
+.product-tabs a{
+    padding:10px 18px;
+    border:1px solid #d0d7e2;
+    border-radius:30px;
+    color:#1f2937;
+    font-size:14px;
+    background:#fff;
+    font-weight:600;
+    transition:.3s;
+}
+
+.product-tabs a:hover{
+    background:#2563eb;
+    color:#fff;
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(37,99,235,.25);
+}
+ 
  .products-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -299,38 +325,45 @@ padding:10px;
 <section class="section" id="products">
 <h2>Our Main Products</h2>
 <p class="subtitle">Steel storage products for home, office, school, factory and commercial use.</p>
-
+<div class="product-tabs">
+  <a href="#wardrobe">Steel Wardrobe</a>
+  <a href="#locker">Metal Locker</a>
+  <a href="#filing">Filing Cabinet</a>
+  <a href="#drawer">Drawer Cabinet</a>
+  <a href="#shoe">Shoe Cabinet</a>
+</div>
+ 
 <div class="products-grid">
 
-  <div class="product-card">
+  <div class="product-card" id="wardrobe">
     <img src="wardrobe.png">
     <h3>Steel Wardrobe</h3>
     <p>Heavy-duty storage for home & commercial use</p>
     <a href="#contact" class="btn">Get Quote →</a>
   </div>
 
-  <div class="product-card">
+ <div class="product-card" id="locker">
     <img src="locker.png">
     <h3>Metal Locker</h3>
     <p>Employee lockers, school lockers and gym lockers with customized sizes and colors.</p>
     <a href="#contact" class="btn">Get Quote →</a>
   </div>
 
-  <div class="product-card">
+ <div class="product-card" id="filing">
     <img src="filing%20cabinet.png">
     <h3>Filing Cabinet</h3>
     <p>Office filing cabinets and storage cabinets for business and commercial spaces.</p>
     <a href="#contact" class="btn">Get Quote →</a>
   </div>
  
- <div class="product-card">
+ <div class="product-card" id="drawer">
     <img src="drawer%20cabinet.png">
     <h3>Drawer Cabinet</h3>
     <p>Compact steel drawer cabinet for home office, workspace and everyday organization.</p>
     <a href="#contact" class="btn">Get Quote →</a>
   </div>
 
-  <div class="product-card">
+ <div class="product-card" id="shoe">
     <img src="shoe%20cabinet.png">
     <h3>Steel Shoe Cabinet</h3>
     <p>Space-saving steel shoe cabinets for home entryways and modern apartments.</p>
