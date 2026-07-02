@@ -5,6 +5,41 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LUOYANG BESI TECH CO., LTD. | Steel Storage Solution Provider</title>
 <style>
+.dropdown{
+    position:relative;
+    display:inline-block;
+}
+
+.dropdown-menu{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#fff;
+    min-width:190px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    border-radius:8px;
+    padding:10px 0;
+    z-index:99;
+}
+
+.dropdown-menu a{
+    display:block;
+    color:#1f2937;
+    padding:10px 16px;
+    margin:0;
+    font-size:14px;
+    white-space:nowrap;
+}
+
+.dropdown-menu a:hover{
+    background:#f3f6fb;
+    color:#2563eb;
+}
+
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
  .products-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -265,7 +300,16 @@ padding:10px;
 <div class="header">
 <div class="logo">BESIFUR</div>
 <div class="nav">
-<a href="products.html">Products</a>
+<div class="dropdown">
+  <a href="products.html">Products</a>
+  <div class="dropdown-menu">
+    <a href="products.html#wardrobe-section">Steel Wardrobe</a>
+    <a href="products.html#locker-section">Metal Locker</a>
+    <a href="products.html#filing-section">Filing Cabinet</a>
+    <a href="products.html#drawer-section">Drawer Cabinet</a>
+    <a href="products.html#shoe-section">Shoe Cabinet</a>
+  </div>
+</div>
 <a href="index.html#factory">Factory</a>
 <a href="index.html#why">Why Us</a>
 <a href="index.html#contact">Contact</a>
