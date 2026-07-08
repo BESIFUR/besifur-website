@@ -88,18 +88,24 @@
  
  .products-grid {
     display:grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 270px);
     gap:30px;
     align-items:stretch;
+    justify-content:center;
 }
- .product-card {
-    background: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+.product-card {
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 16px rgba(0,0,0,0.08);
+
+    width:270px;
+
+    height:100%;
+    display:flex;
+    flex-direction:column;
+
+    transition:0.3s;
 }
  .product-card p {
     flex-grow: 1;
